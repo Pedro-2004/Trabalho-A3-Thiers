@@ -1,26 +1,38 @@
-import {FaUser, FaClok} from 'react-icons/fa';
+import { useState } from 'react';
+import {FaUser} from 'react-icons/fa';
+import './Login.css';
 
 const Login = () => {
+    const [motivo, setMotivo] = useState(""); 
+    const [hora, setHora] = useState(""); 
+    const [data, setData] = useState("");
+    
+    const handleSubnit = (event) => {
+        event.preventDefault();
+
+      alert("Compromisso salvos com sucesso:\n" + "Pauta da reunião: " + motivo + "\n" + 
+            "Horário do compromisso: " + hora + "\n" + 
+            "Data do compromisso: " + data + "\n");
+    };
     return (
         <div className="container">
-            <form>
-                <h1>Cadasta o compromisso</h1>
-               <div>
-                <input type="text" placeholder="Digite o motivo do compromisso"/>
+            <form onSubmit={handleSubnit}>
+                <h1>Cadastra o compromisso</h1>
+               <div className='input-field'>
+                <input type="text" placeholder="Digite o motivo do compromisso"onChange={(e) => setMotivo(e.target.value)}/>
                 <FaUser className='icon'/>
                </div>
-               <div>
-                <input type="time" placeholder="Hora do compromisso " /> 
+               <div className='input-field'>
+                <input type="time" placeholder="Hora do compromisso "  onChange={(e) => setHora(e.target.value)}/> 
                </div>
-               <FaClok className='icon'/>
-               <div>
-                <input type="date" placeholder="Data do comprimisso"/>
+               <div className='input-field'>
+                <input type="date" placeholder="Data do comprimisso" onChange={(e) => setData(e.target.value)}/>
                </div>
-               <buuton>Salvar compromisso</buuton>
+               <button className='recall-forget'>Salvar compromisso</button>
             </form>
 
         </div>
-    )
+    );
 }
 
 export default Login;
