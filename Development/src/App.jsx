@@ -1,6 +1,7 @@
 
 import './App.css'
-import Login from './Compose/Login/Login.jsx';
+import Login from './Page/CommitmentRegistration/Login';
+
 
 
 const App = () => {
