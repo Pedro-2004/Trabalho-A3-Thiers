@@ -1,6 +1,6 @@
 
 import './App.css'
-import Login from './Page/CommitmentRegistration/Login';
+import Login from './Page/CommitmentRegistration/index';
 
 
 

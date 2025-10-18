@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import {FaUser} from 'react-icons/fa';
-import './Login.css';
+import './style.css';
 
 const Login = () => {
     const [motivo, setMotivo] = useState(""); 
