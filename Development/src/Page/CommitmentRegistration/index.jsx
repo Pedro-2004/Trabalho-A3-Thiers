@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import {FaUser} from 'react-icons/fa';
 import './style.css';
+import LoginButton from '../../Compose/LoginButton';
 
 const Login = () => {
     const [motivo, setMotivo] = useState(""); 
@@ -28,7 +29,8 @@ const Login = () => {
                <div className='input-field'>
                 <input type="date" placeholder="Data do comprimisso" onChange={(e) => setData(e.target.value)}/>
                </div>
-               <button className='recall-forget'>Salvar compromisso</button>
+               <LoginButton/>
+               {/* <button className='recall-forget'>Salvar compromisso</button> */}
             </form>
 
         </div>

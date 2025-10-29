@@ -1,7 +1,7 @@
 
 const InputEmail = () => {
     return(
-        <div>
+        <div className="input-field">
              <input className="input-field" type="email" placeholder="Digite o seu e-mail"/>
         </div>
     )
