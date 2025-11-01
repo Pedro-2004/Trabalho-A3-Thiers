@@ -7,20 +7,24 @@ Nosso objetivo é proporcionar flexibilidade e praticidade, ajudando o usuário 
 
 Problema que o Projeto Resolve
 
-No cotidiano moderno — seja em um ambiente corporativo ou pessoal — é comum lidarmos com diversos compromissos simultâneos.
-Muitos deles exigem atenção imediata, outros podem ser adiados ou alterados, e manter esse controle manualmente pode gerar confusão e perda de produtividade.
+No cotidiano moderno seja em um ambiente corporativo ou pessoal é comum lidarmos com diversos compromissos simultâneos.
+Muitos deles exigem atenção imediata, outros podem ser adiados ou remarcados, e manter esse controle de forma manual pode gerar confusão, atrasos e perda de produtividade.
 
-O Commitment List surge como uma solução prática para esse problema. Ele permite que o usuário organize e acompanhe seus compromissos de forma rápida e eficiente, garantindo controle total sobre suas atividades e melhorando a gestão do tempo.
-Com uma interface intuitiva, o sistema visa simplificar a rotina, aumentando a eficiência e reduzindo o estresse causado pela desorganização.
+O Commitment List surge como uma solução prática e inteligente para esse problema. Ele permite que o usuário organize, acompanhe e gerencie seus compromissos de forma rápida e eficiente, garantindo controle total sobre suas atividades e uma melhor gestão do tempo.
+Com uma interface intuitiva e fácil de usar, o sistema foi pensado para simplificar a rotina, aumentar a eficiência e reduzir o estresse causado pela desorganização.
+
+Além disso, foi anexado um link para o diagrama de atividades https://docs.google.com/document/d/1vzma6qvdQDsM-5i8ui3oKtL6qQY8JuHtPGQW8YW6j-Y/edit?usp=sharing, que demonstra de forma visual como o sistema funcionará na prática, detalhando o fluxo das ações do usuário dentro do aplicativo.
 
 Público-Alvo
 
-Inicialmente, o Commitment List foi projetado para profissionais com rotinas agitadas no ambiente corporativo.
-No entanto, após uma análise mais aprofundada, identificamos que a ferramenta pode atender qualquer pessoa que deseje melhorar sua organização pessoal, independentemente do contexto.
+Inicialmente, o Commitment List foi desenvolvido para profissionais com rotinas agitadas no ambiente corporativo.
+No entanto, após uma análise mais aprofundada, identificamos que a ferramenta pode atender qualquer pessoa que deseje aprimorar sua organização pessoal, independentemente do contexto.
 
-Em um cenário onde a produtividade é essencial, tanto pequenas quanto grandes empresas podem se beneficiar da aplicação.
-Nosso diferencial está em oferecer um software acessível, funcional e de alto desempenho, com preço competitivo, em comparação a soluções similares de grandes empresas como Google ou Microsoft.
+Em um cenário onde a produtividade é essencial, tanto pequenas quanto grandes empresas podem se beneficiar do uso da aplicação.
+Nosso diferencial está em oferecer um software acessível, funcional e de alto desempenho, com preço competitivo em comparação a soluções similares de grandes empresas, como Google ou Microsoft.
 O Commitment List entrega eficiência e organização sem comprometer o ritmo acelerado do dia a dia.
+
+Além disso, realizamos uma pesquisas com os clientes por meio de um formulário https://forms.gle/fwRnm76VeqrgMCLv7 para compreender melhor suas necessidades e desafios no cotidiano corporativo. Essa etapa foi fundamental para ajustar as funcionalidades do aplicativo e garantir que ele realmente solucione as principais dificuldades enfrentadas pelos usuários em sua rotina profissional.
 
 Tecnologias Utilizadas
 
