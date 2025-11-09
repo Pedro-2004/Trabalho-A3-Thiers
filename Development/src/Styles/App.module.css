@@ -1,0 +1,31 @@
+/* App.module.css */
+
+/* Reset Global (Adicione isso se ainda não fez para remover as margens brancas) */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.App {
+  /* Propriedades da primeira definição */
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+  box-sizing: border-box;
+  text-shadow: 1px 1px 1px black;
+
+  /* Propriedades da segunda definição */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw; /* Adicione isso para preencher a largura total */
+
+  /* CORREÇÃO DO CAMINHO: Assumindo que a imagem está em 'public/Image/BackgroundImage/...' */
+  background-image: url("../Image/BackgroundImage/aperto-de-mao-dos-homens-de-negocios.jpg");
+  background-size: cover;
+  background-position: center;
+}
