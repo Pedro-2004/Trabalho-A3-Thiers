@@ -7,7 +7,7 @@ const InputCommitment = ({ onInputChange }) => {
       <input
         className={styles.InputCommitment}
         type="text"
-        placeholder="Digite o compromiso"
+        placeholder="Digite"
         onChange={(event) => onInputChange(event.currentTarget.value)}
       />
       <FaUser className="icon" />
