@@ -1,0 +1,70 @@
+# ===========================
+# IGNORAR ARQUIVOS SENSÍVEIS
+# ===========================
+
+# Variáveis de ambiente (senhas, tokens, URLs)
+.env
+.env.local
+.env.*.local
+
+
+# ===========================
+# DEPENDÊNCIAS
+# ===========================
+
+# Pasta de dependências (gerada pelo npm)
+node_modules/
+
+# ===========================
+# LOGS E DEBUG
+# ===========================
+
+# Logs do sistema
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+# ===========================
+# BUILD / OUTPUT
+# ===========================
+
+# Se você gerar build do backend ou compilar algo
+dist/
+build/
+
+# Cache do Babel / TypeScript (se usar futuramente)
+.cache/
+.tmp/
+
+
+# ===========================
+# EDITOR / IDE
+# ===========================
+
+# Configs do VSCode (não precisa ir para o Git)
+.vscode/
+.history/
+
+
+# ===========================
+# SISTEMA OPERACIONAL
+# ===========================
+
+# Arquivos inúteis de Windows e Mac
+.DS_Store
+Thumbs.db
+
+
+# ===========================
+# OUTROS
+# ===========================
+
+# Arquivos de testes (opcional)
+coverage/
+
+# Pastas de uploads temporários (se usar)
+uploads/
+temp/
