@@ -1,4 +1,4 @@
-import { FaEdite } from "react-icons/fa";
+import { FaEdit } from "react-icons/fa";
 import Styles from "../../styles/InputCommitment.module.css";
 
 const InputCommitment = ({ onInputChange }) => {
@@ -10,7 +10,7 @@ const InputCommitment = ({ onInputChange }) => {
         placeholder="Digite o compromiso "
         onChange={(event) => onInputChange(event.currentTarget.value)}
       />
-      <FaEdite className={Styles.Icon} />
+      <FaEdit className={Styles.Icon} />
     </div>
   );
 };
