@@ -1,17 +1,17 @@
-import { FaUser } from "react-icons/fa";
-import styles from "../../styles/InputCommitment.module.css";
+import { FaEdite } from "react-icons/fa";
+import Styles from "../../styles/InputCommitment.module.css";
 
 const InputCommitment = ({ onInputChange }) => {
   return (
-    <>
+    <div className={Styles.InputWrapper}>
       <input
-        className={styles.InputCommitment}
+        className={Styles.InputCommitment}
         type="text"
         placeholder="Digite o compromiso "
         onChange={(event) => onInputChange(event.currentTarget.value)}
       />
-      <FaUser className="icon" />
-    </>
+      <FaEdite className={Styles.Icon} />
+    </div>
   );
 };
 export default InputCommitment;

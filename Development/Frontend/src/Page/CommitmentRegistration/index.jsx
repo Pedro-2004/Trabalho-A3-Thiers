@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { FaUser } from "react-icons/fa";
 import "./style.css";
-
+import Styles from "../../Styles/FromInCommitment.module.css";
 import LoginButton from "../../Compose/LoginButton";
 import InputCommitment from "../../Compose/InputCommitment/index";
 import DateCommitment from "../../Compose/DateCommitment";
 import AppointmentTime from "../../Compose/AppointmentTime";
+import TransparentFasion from "../../Compose/TransparentFashion";
+import TitleCommitmentRegistration from "../../Compose/TitleCommitmentRegistration";
 
 const CommitmentRegistration = () => {
   const [hora, setHora] = useState("");
@@ -31,19 +33,17 @@ const CommitmentRegistration = () => {
     );
   };
   return (
-    <div className="container">
-      <form onSubmit={handleSubnit}>
-        <h1>Cadastra o compromisso</h1>
-        <div className="input-field">
-          <InputCommitment onInputChange={setCommitment} />
-        </div>
-        <div className="input-field">
-          <AppointmentTime getDate={setHora} />
-        </div>
+    <TransparentFasion>
+      <TitleCommitmentRegistration />
+      <form className={Styles.FromInCommitment} onSubmit={handleSubnit}>
+        <InputCommitment onInputChange={setCommitment} />
+
+        <AppointmentTime getDate={setHora} />
+
         <DateCommitment onDateChange={setDate} />
         <LoginButton />
       </form>
-    </div>
+    </TransparentFasion>
   );
 };
 

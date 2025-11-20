@@ -1,9 +1,8 @@
 .LoginButton {
   width: 120px;
   height: 38px;
-  background-color: black;
+  background-color: white;
   border: none;
-  text-align: 35px;
   font-size: 16px;
   border-radius: 10px;
   font-weight: 200;
