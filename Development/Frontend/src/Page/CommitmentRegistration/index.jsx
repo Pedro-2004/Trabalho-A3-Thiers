@@ -5,6 +5,7 @@ import "./style.css";
 import LoginButton from "../../Compose/LoginButton";
 import InputCommitment from "../../Compose/InputCommitment/index";
 import DateCommitment from "../../Compose/DateCommitment";
+import AppointmentTime from "../../Compose/AppointmentTime";
 
 const CommitmentRegistration = () => {
   const [hora, setHora] = useState("");
@@ -34,21 +35,13 @@ const CommitmentRegistration = () => {
       <form onSubmit={handleSubnit}>
         <h1>Cadastra o compromisso</h1>
         <div className="input-field">
-          // Aqui enviamos a função setCommitment para o componente filho // O
-          nome "onInputChange" é só o nome da prop. // Na prática, estamos
-          dizendo: "Filho, quando alguém digitar, chame essa função aqui".
           <InputCommitment onInputChange={setCommitment} />
         </div>
         <div className="input-field">
-          <input
-            type="time"
-            placeholder="Hora do compromisso "
-            onChange={(e) => setHora(e.target.value)}
-          />
+          <AppointmentTime />
         </div>
         <DateCommitment onDateChange={setDate} />
         <LoginButton />
-        {/* <button className='recall-forget'>Salvar compromisso</button> */}
       </form>
     </div>
   );

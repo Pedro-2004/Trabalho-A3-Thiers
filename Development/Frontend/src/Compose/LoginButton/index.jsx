@@ -1,6 +1,5 @@
-import React from "react";
+import Styles from "../../Styles/LoginButton.module.css";
 import { useNavigate } from "react-router-dom";
-import InputEmail from "../InputEmail/index";
 
 const LoginButton = () => {
   const navigate = useNavigate();
@@ -11,7 +10,9 @@ const LoginButton = () => {
 
   return (
     <>
-      <button onClick={handleLoginPage}> Acessar</button>
+      <button className={Styles.LoginButton} onClick={handleLoginPage}>
+        Acessar
+      </button>
     </>
   );
 };
