@@ -1,9 +1,13 @@
 import Styles from "../../Styles/AppointmentTime.module.css";
 
-const AppointmentTime = () => {
+const AppointmentTime = ({ getDate }) => {
   return (
     <>
-      <input className={Styles.AppointmentTime} type="time" />
+      <input
+        className={Styles.AppointmentTime}
+        type="time"
+        onChange={(event) => getDate(event.currentTarget.value)}
+      />
     </>
   );
 };

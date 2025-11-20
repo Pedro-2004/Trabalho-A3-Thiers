@@ -38,7 +38,7 @@ const CommitmentRegistration = () => {
           <InputCommitment onInputChange={setCommitment} />
         </div>
         <div className="input-field">
-          <AppointmentTime />
+          <AppointmentTime getDate={setHora} />
         </div>
         <DateCommitment onDateChange={setDate} />
         <LoginButton />
