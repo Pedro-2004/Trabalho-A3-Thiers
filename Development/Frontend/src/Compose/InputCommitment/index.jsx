@@ -7,7 +7,7 @@ const InputCommitment = ({ onInputChange }) => {
       <input
         className={Styles.InputCommitment}
         type="text"
-        placeholder="Digite o compromiso "
+        placeholder="Digite o compromisso "
         onChange={(event) => onInputChange(event.currentTarget.value)}
       />
       <FaEdit className={Styles.Icon} />
