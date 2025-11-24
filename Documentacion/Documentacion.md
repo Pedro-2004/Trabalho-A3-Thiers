@@ -59,5 +59,7 @@ O PostgreSQL oferece segurança, consistência e facilidade de manutenção, tor
 
 Conclusão
 
-O Commitment List busca unir tecnologia e praticidade para oferecer uma ferramenta simples, moderna e eficiente.
-Nosso foco está em ajudar pessoas e empresas a organizar seus compromissos de maneira inteligente, promovendo produtividade e equilíbrio no dia a dia.
+O Commitment List combina tecnologia moderna e usabilidade para entregar uma ferramenta simples, eficiente e totalmente centrada na organização dos compromissos do usuário.
+Nosso foco é proporcionar produtividade, clareza e equilíbrio, ajudando tanto pessoas quanto empresas a gerir suas atividades de forma inteligente e prática.
+
+Com o apoio do diagrama de atividades, pesquisa com usuários e o PDF com histórias de usuário https://drive.google.com/file/d/1TenvYzJ0emFCKt6IeOm1miB97o3q7iOm/view?usp=sharing , o projeto foi cuidadosamente planejado para atender necessidades reais e oferecer uma solução sólida e confiável.
