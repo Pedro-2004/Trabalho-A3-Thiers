@@ -66,4 +66,4 @@ UserSchema.methods.matchPassword = async function (enterePassword) {
 };
 
 // Cria e exporta o Model 'User' a partir do nosso schema. O nome da coleção no Mongo será 'users.
-module.exports = mongoose.model("User", Userschema);
+module.exports = mongoose.model("User", UserSchema);
