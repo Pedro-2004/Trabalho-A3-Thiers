@@ -54,7 +54,7 @@ const PORT = process.env.PORT || 3000;
 // termina, o Event Loop a coloca na fila de volta. Isso é o 'Non-Blocking I/O'.
 app.listen(PORT, () => {
   console.log(
-    `🚀 Servidor rodando em modo ${
+    `Servidor rodando em modo ${
       process.env.NODE_ENV || "Desenvolvimento"
     } na porta ${PORT}`
   );

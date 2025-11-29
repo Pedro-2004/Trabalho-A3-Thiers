@@ -16,22 +16,37 @@ const CommitmentRegistration = () => {
   // Criamos um estado no componente pai para guardar o compromisso digitado
   const [commitment, setCommitment] = useState("");
 
-  const handleSubnit = (event) => {
+  const handleSubnit = async (event) => {
     event.preventDefault();
 
-    alert(
-      "Compromisso salvos com sucesso:\n" +
-        "Pauta da reunião: " +
-        commitment +
-        "\n" +
-        "Horário do compromisso: " +
-        hora +
-        "\n" +
-        "Data do compromisso: " +
-        date +
-        "\n"
-    );
+    try {
+      const response = await fetch("http://localhost:3001/api/commitments", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${localStorage.getItem("token")}`, // login precisa gerar isso
+        },
+        body: JSON.stringify({
+          name: commitment,
+          date,
+          time: hora,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        alert("Compromisso salvo com sucesso no MongoDB! ");
+        console.log("Salvo:", data);
+      } else {
+        alert("Erro ao salvar compromisso: " + data.message);
+      }
+    } catch (error) {
+      alert("Falha na comunicação com o servidor.");
+      console.error(error);
+    }
   };
+
   return (
     <TransparentFasion>
       <TitleCommitmentRegistration />
