@@ -8,25 +8,33 @@ exports.loginAuto = async (req, res) => {
   try {
     let user = await User.findOne({ email });
 
-    // Se não existir → cria automaticamente
+    // SE NÃO EXISTE → CRIA E JÁ FAZ LOGIN
     if (!user) {
       const hash = await bcrypt.hash(password, 10);
       user = await User.create({ email, password: hash });
-      console.log("[✔] Usuário criado automaticamente:", email);
+      console.log("✔ Usuário criado automaticamente:", email);
+
+      const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
+        expiresIn: "7d",
+      });
+      return res.json({
+        token,
+        user,
+        msg: "Conta criada e login efetuado automaticamente ✔",
+      });
     }
 
-    // Verifica senha
+    // SE EXISTE → AÍ SIM VALIDA SENHA
     const senhaOK = await bcrypt.compare(password, user.password);
     if (!senhaOK) return res.status(401).json({ erro: "Senha incorreta." });
 
-    // Gera token
+    // GERA TOKEN NORMAL
     const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
       expiresIn: "7d",
     });
 
-    return res.json({ token, email: user.email, id: user._id });
-  } catch (e) {
-    console.error("❌ Erro no login:", e.message || e);
-    return res.status(500).json({ erro: "Erro ao logar", detalhe: e.message });
+    return res.json({ token, user, msg: "Login realizado com sucesso ✔" });
+  } catch (err) {
+    return res.status(500).json({ erro: "Erro interno: " + err.message });
   }
 };

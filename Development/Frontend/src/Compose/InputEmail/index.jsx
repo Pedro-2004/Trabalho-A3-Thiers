@@ -5,7 +5,7 @@ const InputEmail = ({ onChangeEmail }) => {
         className="input-field"
         type="email"
         placeholder="Digite o seu e-mail"
-        onChange={(e) => onChangeEmail(e.target.value)} // ← Manda o valor pro state
+        onChange={(event) => onChangeEmail(event.target.value)}
       />
     </div>
   );

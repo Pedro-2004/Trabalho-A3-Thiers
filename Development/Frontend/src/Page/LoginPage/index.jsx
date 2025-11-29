@@ -19,19 +19,19 @@ const LoginPage = () => {
 
       const data = await response.json();
 
+      // Se der erro, mostrar a mensagem correta
       if (!response.ok) {
-        alert("Erro ao logar: " + (data.erro || data.message));
-
+        alert("Erro ao logar: " + (data.erro ?? "Erro desconhecido"));
         return;
       }
 
-      // ⬇ SALVANDO TOKEN AQUI
+      // SALVAR TOKEN CORRETAMENTE
       localStorage.setItem("token", data.token);
 
-      alert("Login realizado com sucesso! 🔥 Token salvo no navegador");
-      console.log("TOKEN →", data.token);
+      alert(" Login realizado e token salvo!");
+      console.log("TOKEN =>", data.token);
     } catch (error) {
-      alert("Falha ao conectar com o servidor.");
+      alert("Falha ao conectar com o servidor");
       console.error(error);
     }
   };

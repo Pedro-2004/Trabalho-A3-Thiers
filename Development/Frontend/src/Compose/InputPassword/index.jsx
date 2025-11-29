@@ -5,7 +5,7 @@ const InputPassword = ({ onChangePassword }) => {
         className="input-field"
         type="password"
         placeholder="Digite a sua senha"
-        onChange={(e) => onChangePassword(e.target.value)} // ← Manda a senha pro state
+        onChange={(event) => onChangePassword(event.target.value)}
       />
     </div>
   );
