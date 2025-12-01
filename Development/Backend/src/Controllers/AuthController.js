@@ -12,7 +12,7 @@ exports.loginAuto = async (req, res) => {
     if (!user) {
       const hash = await bcrypt.hash(password, 10);
       user = await User.create({ email, password: hash });
-      console.log("✔ Usuário criado automaticamente:", email);
+      console.log(" Usuário criado automaticamente:", email);
 
       const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
         expiresIn: "7d",
@@ -20,7 +20,7 @@ exports.loginAuto = async (req, res) => {
       return res.json({
         token,
         user,
-        msg: "Conta criada e login efetuado automaticamente ✔",
+        msg: "Conta criada e login efetuado automaticamente ",
       });
     }
 
