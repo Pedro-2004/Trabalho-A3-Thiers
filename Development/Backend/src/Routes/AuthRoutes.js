@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { loginAuto } = require("../controllers/AuthController");
+const { loginAuto } = require("../Controllers/AuthController");
 
 router.post("/login", loginAuto); // agora login CRIA usuário
 

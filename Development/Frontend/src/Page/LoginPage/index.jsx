@@ -28,7 +28,7 @@ const LoginPage = () => {
       // SALVAR TOKEN CORRETAMENTE
       localStorage.setItem("token", data.token);
 
-      alert(" Login realizado e token salvo!");
+      alert(" Seja bem-vindo, " + email + "!");
       console.log("TOKEN =>", data.token);
     } catch (error) {
       alert("Falha ao conectar com o servidor");

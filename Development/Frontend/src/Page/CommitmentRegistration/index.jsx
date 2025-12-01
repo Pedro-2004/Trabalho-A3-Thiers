@@ -36,7 +36,9 @@ const CommitmentRegistration = () => {
       const data = await response.json();
 
       if (response.ok) {
-        alert("Compromisso salvo com sucesso no MongoDB! ");
+        alert(
+          "Compromisso salvo com sucesso, acesse o mongo para visualização! "
+        );
         console.log("Salvo:", data);
       } else {
         alert("Erro ao salvar compromisso: " + data.message);
